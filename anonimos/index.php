@@ -273,7 +273,28 @@ $datos_estado = mysqli_query($connection, "select estados.id_estado, estados.nom
     <!--  margen arriba | centrado -->
     <!-- borde de arriba  -->
   </section>
-
+<!-- ========================================================== -->
+                        <!-- SECCION RECOMENDACIONES-->
+<!--========================================================== -->
+<section>
+  <!-- ancho para pantallas grandes | margen auto | centrar texto -->
+  <div class="container w-50 m-auto text-center mt-5" id="equipo" >
+      <!-- margen abajo | tamaño letra | colores primarios  -->
+      <h1 class="text-primary display-3 py-5 m-0">Recomendaciones</h1>
+      <blockquote class="blockquote">
+      <p class="fs-3 lead lh-lg m-5 mt-0 pb-5">
+         - Para el uso de la página, recomendamos eliminar las cookies. </p>
+      <p class="fs-3 lead lh-lg m-5 mt-0 pb-5">
+         - Elegir conexiones a Internet seguras (puede ser utilizando una VPN). </p>
+      <p class="fs-3 lead lh-lg m-5 mt-0 pb-5">
+         - Asegurar que el dispositivo cuente con la última actualización (para un mejor navegación). </p>
+       <p class="fs-3 lead lh-lg m-5 mt-0 pb-5">
+         - Asegurarse de contar y de usar las recomendaciones determinadas de seguridad en sus contraseñas. </p>
+      </blockquote>
+    </div>
+    <!--  margen arriba | centrado -->
+    <!-- borde de arriba  -->
+  </section>
 
     <!--========================================================== -->
     <!--Formulario-->
@@ -453,6 +474,53 @@ $datos_estado = mysqli_query($connection, "select estados.id_estado, estados.nom
     <div class="share-btn-container" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Aviso de Privacidad
     </div>
+
+    <div class="share-btn-container2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <p class="fala">Faltas administrativas graves</p>
+    </div>
+
+     <!-- Modal 2 -->
+     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">Faltas Administrativas Graves</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p></p>
+                    Las conductas previstas a continuación, constituyen faltas administrativas graves de los Servidores Públicos, por lo que deberán abstenerse de realizarlas, mediante cualquier acto u omisión.
+                    <p></p>
+                    <p class="fw-bold"> Cohecho </p>
+                    Ejemplo: Cuando un servidor público pide dinero, para agilizar un trámite, una firma, o esconder un expediente. Art. 52 LGRA
+                    <p></p>
+                    <p class="fw-bold"> Peculado </p>
+                    Ejemplo: Un servidor público utiliza al personal de jardinería o de mantenimiento, además de materiales como pintura o cemento, propiedad de la dependencia, para hacer reparaciones en su casa. Art. 53 LGRA
+                     <p></p>
+                     <p class="fw-bold"> Abuso de funciones </p>
+                     Ejemplo: Un servidor público provoca un accidente vial, y pretende valerse de su cargo para que las autoridades que atienden el percance omitan datos en sus reportes con la intención de beneficiarse evadiendo su responsabilidad en el accidente. Art. 57 LGRA
+                    <p></p>
+                    <p class="fw-bold"> Desvío de recursos públicos </p>
+                    Ejemplo: Un servidor público autoriza el pago de una jubilación de un trabajador, mayor a la que le corresponde por ley. Art. 54 LGRA
+                    <p></p>
+                    <p class="fw-bold"> Actuación bajo conflicto de interés</p>
+                    Ejemplo: Un servidor público aprueba o autoriza la adquisición de papelería para la dependencia, y el proveedor es su hermano. Art. 58 LGRA
+
+                  <p></p>
+                    <p class="fw-bold"> Utilización indebida de información</p>
+                    Ejemplo: Un servidor público compra para si mismo, un terreno a un precio muy bajo, sabiendo que se tiene proyectado desarrollar un complejo turístico en la zona.
+          Art. 55 LGRA
+                    <p></p>
+                    <p class="fw-bold"> Contratación indebida</p>
+                    Ejemplo: Un servidor público autoriza la contratación de una persona que fue sancionada con la inhabilitación para el ejercicio del servicio público, al ser encontrada responsable de una falta administrativa. Art. 59 LGRA
+                  </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
     <!--
     <section id="seccion-contacto" class="border-bottom border-secondary border-2">

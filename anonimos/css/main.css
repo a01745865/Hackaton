@@ -18,7 +18,10 @@ body {
      font-weight: 600;
 
  }
- 
+ p.faltas{
+     font-size: 15px;
+ }
+
  .top-nav-collapse{
     background: -webkit-linear-gradient(125deg, #ffffffe3 15%, #1f679e 60%);
     background: -o-linear-gradient(125deg, #ffffffe3 15%, #1f679e 60%);
@@ -166,7 +169,13 @@ div.progress-bar3{
    }
    .shadow.rounded{
     width: 90% !important;
-}   
+}
+    div.container-fluid .progreso {
+        transform: translateY(-30%);
+        margin-top: 2cm;
+        width: 500px;
+        height: 550px;
+    }
 }
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 .shadow.rounded {
@@ -210,6 +219,12 @@ div.progress-bar3{
         margin-top: 30% !important;
         
     }
+    div.container-fluid .progreso {
+        transform: translateX(10%);
+        margin-top: 3cm;
+        width: 500px;
+        height: 550px;
+    }
 }
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
@@ -234,6 +249,12 @@ div.progress-bar3{
         width: 100% !important;
         margin-top: 30% !important;
         
+    }
+    div.container-fluid .progreso {
+        transform: translateX(-10%);
+        margin-top: 3cm;
+        width: 500px;
+        height: 550px;
     }
 }
 
@@ -261,8 +282,26 @@ Social Media
     padding: 15px;
     box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(1 0%);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.share-btn-container2 {
+    transform: rotate(-90deg) !important;
+    background: rgba(235, 231, 231, 0.959);
+    display: inline-flex;
+    flex-direction: column;
+    left: -100px;
+    height: 50px;
+    min-width: 170px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
+    position: fixed;
+    top: 60%;
+    transform: translateY(1 0%);
     border-radius: 10px;
     cursor: pointer;
     z-index: 999;
@@ -283,8 +322,8 @@ Social Media
 
 /* Tarjeta */
 
-div.container-fluid .progreso{
-    transform: translateX(100%);
+div.container-fluid .progreso {
+    transform: translateX(90%);
     margin-top: 3cm;
     width: 500px;
     height: 550px;
